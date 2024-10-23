@@ -1,31 +1,68 @@
-footer{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: medium;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
 main{
     
 }
 .custom-navbar {
-    background-color: #000000; 
+    background-color: #a31919; 
 }
 
 .custom-navbar .navbar-brand {
     color: #ffffff;;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+
+
 .custom-navbar .nav-link {
-    color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
 }
 
-.custom-navbar .nav-link:hover {
-    color: #ffffff; 
+.custom-navbar .nav-link:hover { 
+    color: #000000; 
 }
-.audio-player{
-    background-color: #000000; /* Cor de fundo do contêiner */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 10px; /* Cantos arredondados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+
+  
+  
+.image-container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center ; /* Centraliza verticalmente (se houver altura) */
+  height: 100vh; /* Ajuste conforme necessário */
 }
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+body {
+  background-image: url(); /* Ajuste o caminho aqui */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  
+} .breadcrumb {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  color: #fffefe; /* Altera a cor do texto */
+}
+
+.breadcrumb a {
+  color: #ffffff; /* Cor do link */
+  text-decoration: none; /* Remove sublinhado */
+}
+
+.breadcrumb a:hover {
+  color: #ffffff; /* Cor do link ao passar o mouse */
+}
+
+.bg-yellow {
+    background-color: rgb(255, 255, 255);
+  }
+  

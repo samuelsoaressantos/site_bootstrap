@@ -4,76 +4,370 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regys Hamburgueria</title>
+    <title>Prada Hamburgueria</title>
     <link rel="stylesheet" href="1style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="shortcut icon" href="" type="image/x-icon">
 </head>
 
-<body>
+<body class="bg-yellow">
     <header>
         <nav class="navbar navbar-expand-lg custom-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="1index.html"><h1>PH</h1></a>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="2index.html">Incio</a></li>
-                        <li class="breadcrumb-item"><a href="#">Comprar</a></li>
-                    </ol>
-                </nav>
+                <a class="navbar-brand" href="1index.html"><h1>RH</h1></a>
+                <div class="collapse navbar-collapse">
+                    <nav aria-label="breadcrumb" class="d-flex justify-content-between w-100">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="1index.html">Início</a></li>
+                            <li class="breadcrumb-item"><a href="2index.html">Cardapio</a></li>
+                        </ol>
+                        <a href="2index.html"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-bag" viewBox="0 0 16 16">
+                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                            </svg>
+                        </a>
+                    </nav>
+                </div>
             </div>
         </nav>
     </header>
 
-    <div class="image-container" style="position: relative; text-align: center;">
-        <img src="imagens/logo.png" alt="Bem Vindo" style="width: 300px; height: auto;">
-        <h2 style="color: rgb(148, 26, 26); position: absolute; top: 300px; left: 50%; transform: translateX(-50%);">Bem-vindo à Prado Hamburgueria!</h2>
+    <div class="container mt-4">
+        <h2 class="text-start mb-4" style="color: rgb(148, 26, 26); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Hambúrguer</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="background-color: rgb(255, 255, 255);">
+                    <img src="imagens/bambu.png" class="card-img-top" alt="Hambúrguer Clássico">
+                    <div class="card-body">
+                        <h5 class="card-title">Hambúrguer Clássico</h5>
+                        <p class="card-text">Delicioso hambúrguer com carne suculenta, queijo, alface e tomate.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/hambu2.png" class="card-img-top" alt="Hambúrguer Vegano">
+                    <div class="card-body">
+                        <h5 class="card-title">Hambúrguer Vegano</h5>
+                        <p class="card-text">Saboroso hambúrguer à base de grão de bico, servido com guacamole.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/usaessa.png" class="card-img-top" alt="Hambúrguer com Bacon">
+                    <div class="card-body">
+                        <h5 class="card-title">Hambúrguer com Bacon</h5>
+                        <p class="card-text">Hambúrguer coberto com bacon crocante e molho especial.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/usaessa2.png" class="card-img-top" alt="Hambúrguer Cheddar">
+                    <div class="card-body">
+                        <h5 class="card-title">Hambúrguer Cheddar</h5>
+                        <p class="card-text">Hambúrguer com queijo cheddar derretido e cebolas caramelizadas.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/cheddar.png" class="card-img-top" alt="Hambúrguer Especial">
+                    <div class="card-body">
+                        <h5 class="card-title">Hambúrguer Especial</h5>
+                        <p class="card-text">Um hambúrguer incrível com molho especial e ingredientes frescos.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/stancker.png" class="card-img-top" alt="Hambúrguer Gourmet">
+                    <div class="card-body">
+                        <h5 class="card-title">Hambúrguer Gourmet</h5>
+                        <p class="card-text">Hambúrguer premium com ingredientes selecionados.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <main>
-        <div class="container my-5">
-            <h2>Sobre a Regys Hamburgueria</h2>
-            <div class="row mb-4">
-                <div class="col-md-6">
-                    <h3>Nossa História</h3>
-                    <p>A Regys Hamburgueria começou como um pequeno empreendimento familiar em 2024. Desde então, temos trabalhado para oferecer os melhores hambúrgueres da cidade, sempre com ingredientes frescos e de qualidade.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="imagens/1355403.png" alt="Nossa História" class="img-fluid" style="border-radius: 10px;">
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-md-6">
-                    <img src="imagens/matheus.jpeg" alt="Nossa Missão" class="img-fluid" style="border-radius: 10px;">
-                </div>
-                <div class="col-md-6">
-                    <h3>Nossa Missão</h3>
-                    <p>Proporcionar uma experiência única através de nossos pratos e um atendimento excepcional. Queremos que cada visita seja memorável para nossos clientes.</p>
+     <div class="container mt-4">
+        <h2 class="text-start mb-4" style="color: rgb(148, 26, 26); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Acompanhamentos</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="background-color: rgb(255, 255, 255);">
+                    <img src="imagens/batatacc.png" class="card-img-top" alt="Hambúrguer Clássico">
+                    <div class="card-body">
+                        <h5 class="card-title">Batata com Cheddar</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
                 </div>
             </div>
-
-            <h3>Entre em Contato</h3>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="name" required>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/anel de cebola.png" class="card-img-top" alt="Hambúrguer Vegano">
+                    <div class="card-body">
+                        <h5 class="card-title">Anel de Cebola</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/balde.png" class="card-img-top" alt="Hambúrguer com Bacon">
+                    <div class="card-body">
+                        <h5 class="card-title">Balde de Batata</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Mensagem</label>
-                    <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/batatacb.png" class="card-img-top" alt="Hambúrguer Cheddar">
+                    <div class="card-body">
+                        <h5 class="card-title">Batata com Bacon</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/batata.png" class="card-img-top" alt="Hambúrguer Especial">
+                    <div class="card-body">
+                        <h5 class="card-title">Batata</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/barca.png" class="card-img-top" alt="Hambúrguer Gourmet">
+                    <div class="card-body">
+                        <h5 class="card-title">Barca doida</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
+    </div>
+    <div class="container mt-4">
+        <h2 class="text-start mb-4" style="color: rgb(148, 26, 26); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Sobremesas</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="background-color: rgb(255, 255, 255);">
+                    <img src="imagens/copo de leite.png" class="card-img-top" alt="Hambúrguer Clássico">
+                    <div class="card-body">
+                        <h5 class="card-title">Shake de Baunilha</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/mix.png" class="card-img-top" alt="Hambúrguer Vegano">
+                    <div class="card-body">
+                        <h5 class="card-title">Mix de Ovomaltine</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/shake de chocolate.png" class="card-img-top" alt="Hambúrguer com Bacon">
+                    <div class="card-body">
+                        <h5 class="card-title">Shake de chocolate</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/shake morango.png" class="card-img-top" alt="Hambúrguer Cheddar">
+                    <div class="card-body">
+                        <h5 class="card-title">Shake de Morango</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/super balde.png" class="card-img-top" alt="Hambúrguer Especial">
+                    <div class="card-body">
+                        <h5 class="card-title">Balde de Sorvete</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/brownie.png" class="card-img-top" alt="Hambúrguer Gourmet">
+                    <div class="card-body">
+                        <h5 class="card-title">Brownie</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Regys Hamburgueria. Todos os direitos reservados.</p>
+    <div class="container mt-4">
+        <h2 class="text-start mb-4" style="color: rgb(148, 26, 26); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Bebidas</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="background-color: rgb(255, 255, 255);">
+                    <img src="imagens/guarana.png" class="card-img-top" alt="Hambúrguer Clássico">
+                    <div class="card-body">
+                        <h5 class="card-title">Guarana Antartica</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/gzero.png" class="card-img-top" alt="Hambúrguer Vegano">
+                    <div class="card-body">
+                        <h5 class="card-title">Guarana Antartica Zero</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/natural laranja.png" class="card-img-top" alt="Hambúrguer com Bacon">
+                    <div class="card-body">
+                        <h5 class="card-title">Suco de Laranja</h5>
+                        <p class="card-text">Pra relaxar</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/natural uva.png" class="card-img-top" alt="Hambúrguer Cheddar">
+                    <div class="card-body">
+                        <h5 class="card-title">Suco de Uva</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/maracuja natural.png" class="card-img-top" alt="Hambúrguer Especial">
+                    <div class="card-body">
+                        <h5 class="card-title">Suco de Maracuja</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagens/h20.png" class="card-img-top" alt="Hambúrguer Gourmet">
+                    <div class="card-body">
+                        <h5 class="card-title">H20</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionado a Sacola
+                          </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Adicionado a Sacola
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Adicionar a Sacola</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Você Deseja adicionar o Item na Sacola
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Sim</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 Prada Hamburgueria. Todos os direitos reservados.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
