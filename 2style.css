@@ -8,7 +8,7 @@ main{
 
 .custom-navbar .navbar-brand {
     color: #ffffff;;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:cursive
 
 }
 
@@ -32,7 +32,7 @@ main{
 footer {
   text-align: center;
   padding: 10px;
-  background: #333;
+  background-color: #a31919; 
   color: #fff;
   position: relative;
   bottom: 0;
@@ -48,7 +48,7 @@ body {
   color: rgb(0, 0, 0);
   
 } .breadcrumb {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:cursive
 
   color: #fffefe; /* Altera a cor do texto */
 }
@@ -65,4 +65,16 @@ body {
 .bg-yellow {
     background-color: rgb(255, 255, 255);
   }
+.card-title, .card-text{
+  color: #502719;
+  background-color:white;
+  font-family:cursive;
+}
+#imagemcartao{
   
+}
+.card-img-top{
+  background-color: #f1e5d6;
+}
+
+ 

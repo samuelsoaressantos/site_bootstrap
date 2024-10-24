@@ -8,7 +8,7 @@ main{
 
 .custom-navbar .navbar-brand {
     color: #ffffff;;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:cursive
 
 }
 
@@ -49,7 +49,7 @@ body {
   
   
 } .breadcrumb {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:cursive
 
   color: #fffefe; /* Altera a cor do texto */
 }
@@ -64,6 +64,12 @@ body {
 }
 .bg-yellow {
   background-color: rgb(255, 255, 255);
+}
+#sobrenos{
+  color: #a31919  ;
+  background-color: rgb(241, 241, 241);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 1%;
 }
 
 
