@@ -3,12 +3,12 @@ main{
     
 }
 .custom-navbar {
-    background-color: #a31919; 
+    background-color: #0502179a; 
 }
 
 .custom-navbar .navbar-brand {
     color: #ffffff;;
-    font-family:cursive
+    
 
 }
 
@@ -25,14 +25,25 @@ main{
   
 .image-container {
   display: flex;
+  margin-bottom: -200px;
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center ; /* Centraliza verticalmente (se houver altura) */
   height: 100vh; /* Ajuste conforme necessário */
 }
+
+#cards {
+  margin-top: 100px; /* Ajusta o espaço entre o carousel e os cards */
+}
+
+/* Optional: ajuste a margem interna do carousel, se necessário */
+.carousel-inner {
+  padding-bottom: 10px;
+}
+
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #a31919; 
+  background-color: #0502179a; 
   color: #fff;
   position: relative;
   bottom: 0;
@@ -49,7 +60,7 @@ body {
   
   
 } .breadcrumb {
-  font-family:cursive
+  font-family:cursive;
 
   color: #fffefe; /* Altera a cor do texto */
 }
@@ -63,7 +74,7 @@ body {
   color: #ffffff; /* Cor do link ao passar o mouse */
 }
 .bg-yellow {
-  background-color: rgb(255, 255, 255);
+  background-color: #050217;
 }
 #sobrenos{
   color: #a31919  ;
@@ -72,4 +83,76 @@ body {
   border-radius: 1%;
 }
 
+/* Diminuir altura da navbar */
+.custom-navbar {
+  padding: 5px 0; /* Reduzir o padding superior e inferior */
+  height: 60px; /* Defina uma altura fixa, se necessário */
+}
+
+/* Ajustar o tamanho da logo */
+.n.navbar-logo h1 {
+  font-size: 1.2rem; /* Diminui o tamanho do título */
+  font-weight: bold;
+  line-height: 1.2; /* Ajusta o espaçamento entre as linhas, se necessário */
+}
+
+
+
+/* Ajustar a altura e o tamanho do logo */
+.navbar img {
+  width: 50px; /* Reduzindo o tamanho do logo */
+  height: 50px; /* Reduzindo a altura do logo */
+}
+
+/* Diminuir o tamanho da fonte do breadcrumb */
+.breadcrumb {
+  font-size: 0.85rem; /* Menor tamanho de fonte para o breadcrumb */
+}
+
+/* Ajustar a barra de pesquisa */
+.form-control {
+  height: 30px; /* Diminuir altura do campo de pesquisa */
+  font-size: 0.9rem; /* Ajustar tamanho da fonte da pesquisa */
+}
+
+/* Ajustar o botão de pesquisa */
+.btn-outline-success {
+  padding: 5px 10px; /* Tamanho reduzido para o botão */
+  font-size: 0.9rem; /* Reduzir tamanho da fonte do botão */
+}
+
+.navbar-expand-lg .container-fluid {
+  max-width: 800px; /* Limitar a largura máxima */
+}
+#corpocartao {
+  margin-bottom: 5px; /* Diminui o espaçamento entre os parágrafos */
+}
+
+.preco-antigo, .preco-novo {
+  font-weight: bold; /* Deixa os preços mais destacados */
+}
+
+.preco-antigo {
+  text-decoration: line-through; /* Risca o preço antigo */
+  margin-right: 10px; /* Dá um pequeno espaço entre os preços */
+}
+
+.preco-novo {
+  color: green; /* Coloca o preço novo em uma cor mais destacada */
+}
+
+#cards h2 {
+  color: #ffffff; /* Altere para a cor desejada */
+}
+
+/* Efeito de movimentação ao passar o mouse sobre o card */
+#cartao {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Quando o mouse passar sobre o card */
+#cartao:hover {
+  transform: translateY(-10px); /* Movimento para cima */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+}
 

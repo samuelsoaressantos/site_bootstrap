@@ -3,12 +3,12 @@ main{
     
 }
 .custom-navbar {
-    background-color: #a31919; 
+    background-color: #0502179a; 
 }
 
 .custom-navbar .navbar-brand {
     color: #ffffff;;
-    font-family:cursive
+    font-family:Arial, Helvetica, sans-serif
 
 }
 
@@ -32,7 +32,7 @@ main{
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #a31919; 
+  background-color: #0502179a; 
   color: #fff;
   position: relative;
   bottom: 0;
@@ -41,16 +41,17 @@ footer {
 body {
   background-image: url(); /* Ajuste o caminho aqui */
   background-size: cover;
+  
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   margin: 0;
-  color: rgb(0, 0, 0);
+  
   
 } .breadcrumb {
-  font-family:cursive
+  font-family:Arial, Helvetica, sans-serif ;
 
-  color: #fffefe; /* Altera a cor do texto */
+  color: #fffefe /* Altera a cor do texto */
 }
 
 .breadcrumb a {
@@ -61,20 +62,78 @@ body {
 .breadcrumb a:hover {
   color: #ffffff; /* Cor do link ao passar o mouse */
 }
-
 .bg-yellow {
-    background-color: rgb(255, 255, 255);
-  }
-.card-title, .card-text{
-  color: #502719;
-  background-color:white;
-  font-family:cursive;
+  background-color: #050217;
 }
-#imagemcartao{
-  
-}
-.card-img-top{
-  background-color: #f1e5d6;
+#sobrenos{
+  color: #a31919  ;
+  background-color: rgb(241, 241, 241);
+  font-family: cursive;
+  border-radius: 1%;
 }
 
- 
+/* Diminuir altura da navbar */
+.custom-navbar {
+  padding: 5px 0; /* Reduzir o padding superior e inferior */
+  height: 60px; /* Defina uma altura fixa, se necessário */
+}
+
+/* Ajustar o tamanho da logo */
+.n.navbar-logo h1 {
+  font-size: 1.2rem; /* Diminui o tamanho do título */
+  font-weight: bold;
+  line-height: 1.2; /* Ajusta o espaçamento entre as linhas, se necessário */
+}
+
+
+
+/* Ajustar a altura e o tamanho do logo */
+.navbar img {
+  width: 50px; /* Reduzindo o tamanho do logo */
+  height: 50px; /* Reduzindo a altura do logo */
+}
+
+/* Diminuir o tamanho da fonte do breadcrumb */
+.breadcrumb {
+  font-size: 0.85rem; /* Menor tamanho de fonte para o breadcrumb */
+}
+
+/* Ajustar a barra de pesquisa */
+.form-control {
+  height: 30px; /* Diminuir altura do campo de pesquisa */
+  font-size: 0.9rem; /* Ajustar tamanho da fonte da pesquisa */
+}
+
+/* Ajustar o botão de pesquisa */
+.btn-outline-success {
+  padding: 5px 10px; /* Tamanho reduzido para o botão */
+  font-size: 0.9rem; /* Reduzir tamanho da fonte do botão */
+}
+
+.navbar-expand-lg .container-fluid {
+  max-width: 800px; /* Limitar a largura máxima */
+}
+#corpocartao {
+  margin-bottom: 5px; /* Diminui o espaçamento entre os parágrafos */
+}
+
+.preco-antigo, .preco-novo {
+  font-weight: bold; /* Deixa os preços mais destacados */
+}
+
+.preco-antigo {
+  text-decoration: line-through; /* Risca o preço antigo */
+  margin-right: 10px; /* Dá um pequeno espaço entre os preços */
+}
+
+.preco-novo {
+  color: green; /* Coloca o preço novo em uma cor mais destacada */
+}
+
+#cards h2 {
+  color: #ffffff; /* Altere para a cor desejada */
+}
+
+
+
+

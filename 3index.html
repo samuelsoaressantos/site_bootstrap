@@ -1,88 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prada Hamburgueria</title>
+    <title>Ipaba´s Tech</title>
     <link rel="stylesheet" href="1style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="shortcut icon" href="" type="image/x-icon">
-</head>
+    <style>
+        /* Remover margem do topo da navbar */
+        .custom-navbar {
+            margin-top: 0;
+        }
+        
+        /* Ajusta a distância entre a navbar e o carousel */
+        .image-container {
+            margin-top: -30px;
+        }
 
-<body class="bg-yellow"id>
+        /* Efeito de movimentação ao passar o mouse sobre o card */
+        #cartao {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Quando o mouse passar sobre o card */
+        #cartao:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo dos filtros */
+        .filters-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        .filter-title {
+            font-family: cursive;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body class="bg-yellow">
     <header>
         <nav class="navbar navbar-expand-lg custom-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="1index.html"><h1>RH</h1></a>
+                <a href="2index.html">
+                    <!-- Logo da empresa -->
+                    <img src="imagens/Ipaba’s.png" width="30" height="30" alt="Logo" class="bi bi-bag">
+                </a>
+                <a class="navbar-brand" href="1index.html">
+                    <h1 class="navbar-logo"  style="color: #ffffff;" >Ipaba´s Tech</h1>
+                </a>
                 <div class="collapse navbar-collapse">
                     <nav aria-label="breadcrumb" class="d-flex justify-content-between w-100">
                         <ol class="breadcrumb mb-0">
-                            <li class="breadcrumb-item"><a href="1index.html">Início</a></li>
-                            <li class="breadcrumb-item"><a href="2index.html">Cardapio</a></li>
-                            <li class="breadcrumb-item"><a href="3index.html">Encontre-nos</a></li>
+                            <li class="breadcrumb-item"><a href="2index.html">Montagem</a></li>
+                            <li class="breadcrumb-item"><a href="2index.html">Peças</a></li>
+                            <li class="breadcrumb-item"><a href="3index.html">Manutenção</a></li>
                         </ol>
-                        <a href="2index.html"> <!-- Altere o link conforme necessário -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-bag" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-                            </svg>
-                        </a>
                     </nav>
+                    <form class="d-flex ms-auto" action="/search" method="get">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Pesquisar" name="q">
+                    </form>
                 </div>
             </div>
         </nav>
     </header>
-    
-    
-    
-
-   
 
     <main>
-        <div class="container my-5" id="sobrenos">
-            <h2>Encontre-nos</h2>
-            <div class="row mb-4">
-                <div class="col-md-6">
-                    <h3></h3>
-                    <p>Estamos Localizado na Rua Vitoria Regia no Bairro Vila Celeste.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="imagens/localizaçao.png" alt="Nossa História" class="img-fluid" style="border-radius: 10px;">
-                </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-md-6">
-                 
-                </div>
+        <div class="container mt-4">
+            <!-- Filtros de categoria -->
+            <div class="filters-container">
+                <h3 class="filter-title">Filtrar por Categoria</h3>
+                <form id="filter-form">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="hamburguer" id="hamburguer-filter" checked>
+                        <label class="form-check-label" for="hamburguer-filter">
+                            GPU
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="acompanhamento" id="acompanhamento-filter" checked>
+                        <label class="form-check-label" for="acompanhamento-filter">
+                            CPU
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="sobremesa" id="sobremesa-filter" checked>
+                        <label class="form-check-label" for="sobremesa-filter">
+                            Placa Mãe
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="bebida" id="bebida-filter" checked>
+                        <label class="form-check-label" for="bebida-filter">
+                            Memorias
+                        </label>
+                    </div>
+                </form>
             </div>
 
-            <h3>Entre em Contato</h3>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="name" required>
+            <!-- Cards de Produtos -->
+            <h2 class="text-start mb-4" style=" font-family:cursive;">GPU</h2>
+            <div class="row" id="GPU">
+                <!-- Hamburger Items -->
+                <div class="col-md-4 mb-4 hamburger">
+                    <div class="card" id="cartao">
+                        <img src="imagens/bambu.png" class="card-img-top" alt="Hambúrguer Clássico">
+                        <div class="card-body">
+                            <h5 class="card-title">Hambúrguer Clássico</h5>
+                            <p class="card-text">Delicioso hambúrguer com carne suculenta, queijo, alface e tomate.</p>
+                            <button type="button" class="btn btn-primary">Adicionar a Sacola</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" required>
+                <!-- Outros hambúrgueres aqui... -->
+            </div>
+
+            <h2 class="text-start mb-4" style="font-family: cursive;">CPU</h2>
+            <div class="row" id="CPU">
+                <!-- Acompanhamentos -->
+                <div class="col-md-4 mb-4 acompanhamento">
+                    <div class="card">
+                        <img src="imagens/batatacc.png" class="card-img-top" alt="Batata com Cheddar">
+                        <div class="card-body">
+                            <h5 class="card-title">Batata com Cheddar</h5>
+                            <button type="button" class="btn btn-primary">Adicionar a Sacola</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Mensagem</label>
-                    <textarea class="form-control" id="message" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+                <!-- Outros acompanhamentos aqui... -->
+            </div>
+
+            <!-- Sobremesas e Bebidas com a mesma estrutura -->
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Prada Hamburgueria. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Ipaba´s Tech.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-</body>
+    
+    <script>
+        // JavaScript para Filtragem
+        document.getElementById('filter-form').addEventListener('change', function() {
+            const GPU = document.getElementById('GPU').checked;
+            const CPU = document.getElementById('CPU').checked;
+            const sobremesaFilter = document.getElementById('sobremesa-filter').checked;
+            const bebidaFilter = document.getElementById('bebida-filter').checked;
 
+            // Mostrar ou esconder categorias baseadas nos filtros
+            document.querySelectorAll('.GPU').forEach(item => item.style.display = GPU ? 'block' : 'none');
+            document.querySelectorAll('.CPU').forEach(item => item.style.display = CPU ? 'block' : 'none');
+            document.querySelectorAll('.Placa Mãe').forEach(item => item.style.display = sobremesaFilter ? 'block' : 'none');
+            document.querySelectorAll('.Memoria').forEach(item => item.style.display = bebidaFilter ? 'block' : 'none');
+        });
+    </script>
+</body>
 </html>
