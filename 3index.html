@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,10 +58,10 @@
                 </a>
                 <div class="collapse navbar-collapse">
                     <nav aria-label="breadcrumb" class="d-flex justify-content-between w-100">
-                        <ol class="breadcrumb mb-0">
-                            <li class="breadcrumb-item"><a href="2index.html">Montagem</a></li>
-                            <li class="breadcrumb-item"><a href="2index.html">Peças</a></li>
-                            <li class="breadcrumb-item"><a href="3index.html">Manutenção</a></li>
+                        <ol class="breadcrumb mb-0" style="font-family: Arial, Helvetica, sans-serif;">
+                            <li class="breadcrumb-item"><a href="2index.html"><strong>Montagem</strong></a></li>
+                            <li class="breadcrumb-item"><a href="3index.html"><strong>Peças</strong></a></li>
+                            <li class="breadcrumb-item"><a href="3index.html"><strong>Manutenção</strong></a></li>
                         </ol>
                     </nav>
                     <form class="d-flex ms-auto" action="/search" method="get">
@@ -79,65 +79,317 @@
                 <h3 class="filter-title">Filtrar por Categoria</h3>
                 <form id="filter-form">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="hamburguer" id="hamburguer-filter" checked>
-                        <label class="form-check-label" for="hamburguer-filter">
+                        <input class="form-check-input" type="checkbox" value="GPU" id="gpu-filter" checked>
+                        <label class="form-check-label" for="gpu-filter">
                             GPU
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="acompanhamento" id="acompanhamento-filter" checked>
-                        <label class="form-check-label" for="acompanhamento-filter">
+                        <input class="form-check-input" type="checkbox" value="CPU" id="cpu-filter" checked>
+                        <label class="form-check-label" for="cpu-filter">
                             CPU
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="sobremesa" id="sobremesa-filter" checked>
-                        <label class="form-check-label" for="sobremesa-filter">
+                        <input class="form-check-input" type="checkbox" value="Placa Mãe" id="placa-mae-filter" checked>
+                        <label class="form-check-label" for="placa-mae-filter">
                             Placa Mãe
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="bebida" id="bebida-filter" checked>
-                        <label class="form-check-label" for="bebida-filter">
-                            Memorias
+                        <input class="form-check-input" type="checkbox" value="Memoria" id="memoria-filter" checked>
+                        <label class="form-check-label" for="memoria-filter">
+                            Memórias
                         </label>
                     </div>
                 </form>
             </div>
 
             <!-- Cards de Produtos -->
-            <h2 class="text-start mb-4" style=" font-family:cursive;">GPU</h2>
+            <h2 class="text-start mb-4" style="color: #f8f9fa;" style=" font-family: 'Times New Roman', Times, serif;">GPU</h2>
             <div class="row" id="GPU">
                 <!-- Hamburger Items -->
-                <div class="col-md-4 mb-4 hamburger">
+                <div class="col-md-4 mb-4 GPU">
                     <div class="card" id="cartao">
-                        <img src="imagens/bambu.png" class="card-img-top" alt="Hambúrguer Clássico">
+                        <img src="imagens/6600.jpg" class="card-img-top" alt="Hambúrguer Clássico">
                         <div class="card-body">
-                            <h5 class="card-title">Hambúrguer Clássico</h5>
-                            <p class="card-text">Delicioso hambúrguer com carne suculenta, queijo, alface e tomate.</p>
-                            <button type="button" class="btn btn-primary">Adicionar a Sacola</button>
+                            <h5 class="card-title">RX 6600</h5>
+                            <div style="display: inline-block; vertical-align: middle;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                    <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                                <span>R$ 550,89 no boleto</span>
+                            </div>
+                            
+                                <p class="card-text"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+                                    <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1"/>
+                                  </svg>
+                                  <span>R$ 550,89 no cartão</span></p>
+                            <button type="button" class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 GPU">
+                    <div class="card" id="cartao">
+                        <img src="imagens/RX580.webp" class="card-img-top" alt="Hambúrguer Clássico">
+                        <div class="card-body">
+                            <h5 class="card-title">RX 580</h5>
+                            <div style="display: inline-block; vertical-align: middle;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                    <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                                <span>R$ 550,89 no boleto</span>
+                            </div>
+                            
+                                <p class="card-text"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+                                    <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1"/>
+                                  </svg>
+                                  <span>R$ 550,89 no cartão</span></p>
+                            <button type="button" class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 GPU">
+                    <div class="card" id="cartao">
+                        <img src="imagens/4090.jfif" class="card-img-top" alt="Hambúrguer Clássico">
+                        <div class="card-body">
+                            <h5 class="card-title">RTX 4090</h5>
+                            <div style="display: inline-block; vertical-align: middle;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                    <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                                <span>R$ 550,89 no boleto</span>
+                            </div>
+                            
+                                <p class="card-text"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+                                    <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1"/>
+                                  </svg>
+                                  <span>R$ 550,89 no cartão</span></p>
+                            <button type="button" class="btn btn-primary">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <!-- Outros hambúrgueres aqui... -->
             </div>
 
-            <h2 class="text-start mb-4" style="font-family: cursive;">CPU</h2>
+            <h2 class="text-start mb-4" style="color: #f8f9fa;" style=" font-family: 'Times New Roman', Times, serif;">CPU</h2>
             <div class="row" id="CPU">
-                <!-- Acompanhamentos -->
-                <div class="col-md-4 mb-4 acompanhamento">
-                    <div class="card">
-                        <img src="imagens/batatacc.png" class="card-img-top" alt="Batata com Cheddar">
+                <!-- Hamburger Items -->
+                <div class="col-md-4 mb-4 CPU">
+                    <div class="card" id="cartao">
+                        <img src="imagens/5500.webp" class="card-img-top" alt="Hambúrguer Clássico">
                         <div class="card-body">
-                            <h5 class="card-title">Batata com Cheddar</h5>
-                            <button type="button" class="btn btn-primary">Adicionar a Sacola</button>
+                            <h5 class="card-title">Amd Ryzen 5500</h5>
+                            <div style="display: inline-block; vertical-align: middle;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                    <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                                <span>R$ 550,89 no boleto</span>
+                            </div>
+                            
+                                <p class="card-text"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+                                    <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1"/>
+                                  </svg>
+                                  <span>R$ 550,89 no cartão</span></p>
+                            <button type="button" class="btn btn-primary">Comprar</button>
                         </div>
                     </div>
                 </div>
-                <!-- Outros acompanhamentos aqui... -->
+                <div class="col-md-4 mb-4 CPU">
+                    <div class="card" id="cartao">
+                        <img src="imagens/i9.jfif" class="card-img-top" alt="Hambúrguer Clássico">
+                        <div class="card-body">
+                            <h5 class="card-title">Intel i9</h5>
+                            <div style="display: inline-block; vertical-align: middle;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                    <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                                <span>R$ 550,89 no boleto</span>
+                            </div>
+                            
+                                <p class="card-text"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+                                    <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1"/>
+                                  </svg>
+                                  <span>R$ 550,89 no cartão</span></p>
+                            <button type="button" class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 CPU">
+                    <div class="card" id="cartao">
+                        <img src="imagens/5600.jfif" class="card-img-top" alt="Hambúrguer Clássico">
+                        <div class="card-body">
+                            <h5 class="card-title">Amd Ryzen 5600</h5>
+                            <div style="display: inline-block; vertical-align: middle;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                    <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                                <span>R$ 550,89 no boleto</span>
+                            </div>
+                            
+                                <p class="card-text"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+                                    <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1"/>
+                                  </svg>
+                                  <span>R$ 550,89 no cartão</span></p>
+                            <button type="button" class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2 class="text-start mb-4" style="color: #f8f9fa;" style=" font-family: 'Times New Roman', Times, serif;">Placa Mãe</h2>
+            <div class="row" id="CPU">
+                <!-- Hamburger Items -->
+                <div class="col-md-4 mb-4 PLACA">
+                    <div class="card" id="cartao">
+                        <img src="imagens/b550.jfif" class="card-img-top" alt="Hambúrguer Clássico">
+                        <div class="card-body">
+                            <h5 class="card-title">Placa Mãe b550</h5>
+                            <div style="display: inline-block; vertical-align: middle;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                    <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                                <span>R$ 550,89 no boleto</span>
+                            </div>
+                            
+                                <p class="card-text"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+                                    <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1"/>
+                                  </svg>
+                                  <span>R$ 550,89 no cartão</span></p>
+                            <button type="button" class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 PLACA">
+                    <div class="card" id="cartao">
+                        <img src="imagens/b650.webp" class="card-img-top" alt="Hambúrguer Clássico">
+                        <div class="card-body">
+                            <h5 class="card-title">Placa Mãe b650</h5>
+                            <div style="display: inline-block; vertical-align: middle;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                    <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                                <span>R$ 550,89 no boleto</span>
+                            </div>
+                            
+                                <p class="card-text"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+                                    <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1"/>
+                                  </svg>
+                                  <span>R$ 550,89 no cartão</span></p>
+                            <button type="button" class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 PLACA">
+                    <div class="card" id="cartao">
+                        <img src="imagens/b450.webp" class="card-img-top" alt="Hambúrguer Clássico">
+                        <div class="card-body">
+                            <h5 class="card-title">Placa Mãe b450</h5>
+                            <div style="display: inline-block; vertical-align: middle;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                    <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                                <span>R$ 550,89 no boleto</span>
+                            </div>
+                            
+                                <p class="card-text"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+                                    <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1"/>
+                                  </svg>
+                                  <span>R$ 550,89 no cartão</span></p>
+                            <button type="button" class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-start mb-4" style="color: #f8f9fa;" style=" font-family: 'Times New Roman', Times, serif;">Memorias</h2>
+                <div class="row" id="CPU">
+                    <!-- Hamburger Items -->
+                    <div class="col-md-4 mb-4 MEMORIA">
+                        <div class="card" id="cartao">
+                            <img src="imagens/16r.webp" class="card-img-top" alt="Hambúrguer Clássico">
+                            <div class="card-body">
+                                <h5 class="card-title">Memoria ram 16gb</h5>
+                                <div style="display: inline-block; vertical-align: middle;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                        <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                                    </svg>
+                                    <span>R$ 550,89 no boleto</span>
+                                </div>
+                                
+                                    <p class="card-text"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+                                        <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+                                        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1"/>
+                                      </svg>
+                                      <span>R$ 550,89 no cartão</span></p>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 MEMORIA">
+                        <div class="card" id="cartao">
+                            <img src="imagens/520.jpg" class="card-img-top" alt="Hambúrguer Clássico">
+                            <div class="card-body">
+                                <h5 class="card-title">Ssd sata 520gb</h5>
+                                <div style="display: inline-block; vertical-align: middle;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                        <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                                    </svg>
+                                    <span>R$ 550,89 no boleto</span>
+                                </div>
+                                
+                                    <p class="card-text"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+                                        <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+                                        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1"/>
+                                      </svg>
+                                      <span>R$ 550,89 no cartão</span></p>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 MEMORIA">
+                        <div class="card" id="cartao">
+                            <img src="imagens/hd.webp" class="card-img-top" alt="Hambúrguer Clássico">
+                            <div class="card-body">
+                                <h5 class="card-title">Hd 1tb</h5>
+                                <div style="display: inline-block; vertical-align: middle;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                        <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                                    </svg>
+                                    <span>R$ 550,89 no boleto</span>
+                                </div>
+                                
+                                    <p class="card-text"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
+                                        <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+                                        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1"/>
+                                      </svg>
+                                      <span>R$ 550,89 no cartão</span></p>
+                                <button type="button" class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+               
             </div>
 
-            <!-- Sobremesas e Bebidas com a mesma estrutura -->
         </div>
     </main>
 
@@ -152,16 +404,16 @@
     <script>
         // JavaScript para Filtragem
         document.getElementById('filter-form').addEventListener('change', function() {
-            const GPU = document.getElementById('GPU').checked;
-            const CPU = document.getElementById('CPU').checked;
-            const sobremesaFilter = document.getElementById('sobremesa-filter').checked;
-            const bebidaFilter = document.getElementById('bebida-filter').checked;
+            const gpuFilter = document.getElementById('gpu-filter').checked;
+            const cpuFilter = document.getElementById('cpu-filter').checked;
+            const placaMaeFilter = document.getElementById('placa-mae-filter').checked;
+            const memoriaFilter = document.getElementById('memoria-filter').checked;
 
             // Mostrar ou esconder categorias baseadas nos filtros
-            document.querySelectorAll('.GPU').forEach(item => item.style.display = GPU ? 'block' : 'none');
-            document.querySelectorAll('.CPU').forEach(item => item.style.display = CPU ? 'block' : 'none');
-            document.querySelectorAll('.Placa Mãe').forEach(item => item.style.display = sobremesaFilter ? 'block' : 'none');
-            document.querySelectorAll('.Memoria').forEach(item => item.style.display = bebidaFilter ? 'block' : 'none');
+            document.querySelectorAll('.GPU').forEach(item => item.style.display = gpuFilter ? 'block' : 'none');
+            document.querySelectorAll('.CPU').forEach(item => item.style.display = cpuFilter ? 'block' : 'none');
+            document.querySelectorAll('.PLACA').forEach(item => item.style.display = placaMaeFilter ? 'block' : 'none');
+            document.querySelectorAll('.MEMORIA').forEach(item => item.style.display = memoriaFilter ? 'block' : 'none');
         });
     </script>
 </body>
