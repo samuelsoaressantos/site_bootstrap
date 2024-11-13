@@ -37,7 +37,7 @@ main{
 
 /* Optional: ajuste a margem interna do carousel, se necessário */
 .carousel-inner {
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 footer {
@@ -60,7 +60,7 @@ body {
   
   
 } .breadcrumb {
-  font-family:cursive;
+  font-family:Arial, Helvetica, sans-serif;
 
   color: #fffefe; /* Altera a cor do texto */
 }

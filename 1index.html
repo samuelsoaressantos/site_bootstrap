@@ -10,14 +10,14 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="shortcut icon" href="" type="image/x-icon">
     <style>
-        /* Remove a margem do topo da navbar */
+        
         .custom-navbar {
             margin-top: 0;
         }
 
-        /* Ajusta a distância entre a navbar e o carousel */
+     
         .image-container {
-            margin-top: -30px; /* Ajuste a distância conforme necessário */
+            margin-top: -150px; 
         }
     </style>
 </head>
@@ -50,20 +50,40 @@
             </div>
         </nav>
         <style>
-            /* Efeito de movimentação ao passar o mouse sobre o card */
+           
             #cartao {
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
             }
     
-            /* Quando o mouse passar sobre o card */
+            
             #cartao:hover {
-                transform: translateY(-10px); /* Movimento para cima */
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+                transform: translateY(-10px); 
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
             }
         </style>
     </header>
-
-    <!-- Carousel de imagens -->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagens/Seja-Bem vindo.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+      </div>
+   
     <div class="image-container" style="position: relative; text-align: center;">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">

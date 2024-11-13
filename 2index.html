@@ -16,7 +16,6 @@
         <nav class="navbar navbar-expand-lg custom-navbar">
             <div class="container-fluid">
                 <a href="2index.html">
-                    <!-- Logo da empresa -->
                     <img src="imagens/Ipaba’s.png" width="30" height="30" alt="Logo" class="bi bi-bag">
                 </a>
                 <a class="navbar-brand" href="1index.html">
@@ -40,137 +39,100 @@
         </nav>
     </header>
 
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Montar Computador</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
-                color: #0502179a;
-                margin: 0;
-                padding: 20px;
-            }
-            h1 {
-                text-align: center;
-                color: #333;
-            }
-            .container {
-                max-width: 800px;
-                margin: 0 auto;
-                background: #fff;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px #0502179a(0, 0, 0, 0.1);
-            }
-            .component {
-                margin-bottom: 20px;
-            }
-            label {
-                font-weight: bold;
-            }
-            select, button {
-                width: 100%;
-                padding: 10px;
-                margin-top: 5px;
-                border: 1px solid #ffffff;
-                border-radius: 4px;
-            }
-            button {
-                background-color: #0502179a;
-                color: #fff;
-                font-size: 16px;
-                cursor: pointer;
-            }
-            button:hover {
-                background-color: #0502179a;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Monte seu Computador</h1>
-    
-            <div class="component">
-                <label for="cpu">Processador (CPU):</label>
-                <select id="cpu">
-                    <option value="intel_i5">Intel Core i5</option>
-                    <option value="intel_i7">Intel Core i7</option>
-                    <option value="amd_ryzen5">AMD Ryzen 5</option>
-                    <option value="amd_ryzen7">AMD Ryzen 7</option>
-                </select>
-            </div>
-    
-            <div class="component">
-                <label for="gpu">Placa de Vídeo (GPU):</label>
-                <select id="gpu">
-                    <option value="nvidia_gtx_1660">NVIDIA GTX 1660</option>
-                    <option value="nvidia_rtx_3060">NVIDIA RTX 3060</option>
-                    <option value="amd_rx_580">AMD RX 580</option>
-                    <option value="amd_rx_6700">AMD RX 6700 XT</option>
-                </select>
-            </div>
-    
-            <div class="component">
-                <label for="ram">Memória RAM:</label>
-                <select id="ram">
-                    <option value="8gb">8GB DDR4</option>
-                    <option value="16gb">16GB DDR4</option>
-                    <option value="32gb">32GB DDR4</option>
-                </select>
-            </div>
-    
-            <div class="component">
-                <label for="storage">Armazenamento:</label>
-                <select id="storage">
-                    <option value="ssd_256gb">SSD 256GB</option>
-                    <option value="ssd_512gb">SSD 512GB</option>
-                    <option value="hdd_1tb">HDD 1TB</option>
-                    <option value="ssd_1tb">SSD 1TB</option>
-                </select>
-            </div>
-    
-            <div class="component">
-                <label for="power_supply">Fonte de Alimentação:</label>
-                <select id="power_supply">
-                    <option value="500w">500W</option>
-                    <option value="650w">650W</option>
-                    <option value="750w">750W</option>
-                    <option value="850w">850W</option>
-                </select>
-            </div>
-    
-            <button onclick="montarPC()">Montar PC</button>
-    
-            <div id="resultado" style="margin-top: 20px;"></div>
+    <div class="container">
+        <h1>Monte seu Computador</h1>
+
+        <div class="component">
+            <label for="cpu">Processador (CPU):</label>
+            <select id="cpu">
+                <option value="1200">Intel Core i5 - R$1200</option>
+                <option value="1800">Intel Core i7 - R$1800</option>
+                <option value="1000">AMD Ryzen 5 - R$1000</option>
+                <option value="1500">AMD Ryzen 7 - R$1500</option>
+            </select>
         </div>
-    
-        <script>
-            function montarPC() {
-                const cpu = document.getElementById("cpu").value;
-                const gpu = document.getElementById("gpu").value;
-                const ram = document.getElementById("ram").value;
-                const storage = document.getElementById("storage").value;
-                const powerSupply = document.getElementById("power_supply").value;
-    
-                const configuracao = `
-                    <h3>Configuração do PC:</h3>
-                    <ul>
-                        <li><strong>Processador:</strong> ${cpu}</li>
-                        <li><strong>Placa de Vídeo:</strong> ${gpu}</li>
-                        <li><strong>Memória RAM:</strong> ${ram}</li>
-                        <li><strong>Armazenamento:</strong> ${storage}</li>
-                        <li><strong>Fonte de Alimentação:</strong> ${powerSupply}</li>
-                    </ul>
-                `;
-    
-                document.getElementById("resultado").innerHTML = configuracao;
-            }
-        </script>
-    </body>
-    </html>
+
+        <div class="component">
+            <label for="gpu">Placa de Vídeo (GPU):</label>
+            <select id="gpu">
+                <option value="1200">NVIDIA GTX 1660 - R$1200</option>
+                <option value="2200">NVIDIA RTX 3060 - R$2200</option>
+                <option value="900">AMD RX 580 - R$900</option>
+                <option value="1800">AMD RX 6700 XT - R$1800</option>
+            </select>
+        </div>
+
+        <div class="component">
+            <label for="ram">Memória RAM:</label>
+            <select id="ram">
+                <option value="300">8GB DDR4 - R$300</option>
+                <option value="500">16GB DDR4 - R$500</option>
+                <option value="900">32GB DDR4 - R$900</option>
+            </select>
+        </div>
+
+        <div class="component">
+            <label for="storage">Armazenamento:</label>
+            <select id="storage">
+                <option value="200">SSD 256GB - R$200</option>
+                <option value="400">SSD 512GB - R$400</option>
+                <option value="300">HDD 1TB - R$300</option>
+                <option value="600">SSD 1TB - R$600</option>
+            </select>
+        </div>
+
+        <div class="component">
+            <label for="power_supply">Fonte de Alimentação:</label>
+            <select id="power_supply">
+                <option value="200">500W - R$200</option>
+                <option value="300">650W - R$300</option>
+                <option value="400">750W - R$400</option>
+                <option value="500">850W - R$500</option>
+            </select>
+        </div>
+
+        <button onclick="montarPC()">Montar PC</button>
+        <button onclick="calcularPrecoTotal()">Ver Preço Total</button>
+
+        <div id="resultado" style="margin-top: 20px;"></div>
+    </div>
+
+    <script>
+        function montarPC() {
+            const cpu = document.getElementById("cpu").selectedOptions[0].text;
+            const gpu = document.getElementById("gpu").selectedOptions[0].text;
+            const ram = document.getElementById("ram").selectedOptions[0].text;
+            const storage = document.getElementById("storage").selectedOptions[0].text;
+            const powerSupply = document.getElementById("power_supply").selectedOptions[0].text;
+
+            const configuracao = `
+                <h3>Configuração do PC:</h3>
+                <ul>
+                    <li><strong>Processador:</strong> ${cpu}</li>
+                    <li><strong>Placa de Vídeo:</strong> ${gpu}</li>
+                    <li><strong>Memória RAM:</strong> ${ram}</li>
+                    <li><strong>Armazenamento:</strong> ${storage}</li>
+                    <li><strong>Fonte de Alimentação:</strong> ${powerSupply}</li>
+                </ul>
+            `;
+
+            document.getElementById("resultado").innerHTML = configuracao;
+        }
+
+        function calcularPrecoTotal() {
+            const cpuPreco = parseFloat(document.getElementById("cpu").value);
+            const gpuPreco = parseFloat(document.getElementById("gpu").value);
+            const ramPreco = parseFloat(document.getElementById("ram").value);
+            const storagePreco = parseFloat(document.getElementById("storage").value);
+            const powerSupplyPreco = parseFloat(document.getElementById("power_supply").value);
+
+            const precoTotal = cpuPreco + gpuPreco + ramPreco + storagePreco + powerSupplyPreco;
+
+            document.getElementById("resultado").innerHTML += `
+                <h3>Preço Total: R$ ${precoTotal.toFixed(2)}</h3>
+            `;
+        }
+    </script>
 
     <footer>
         <p>&copy; 2024 Ipaba´s Tech.</p>
