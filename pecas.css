@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 main{
     
@@ -8,7 +9,7 @@ main{
 
 .custom-navbar .navbar-brand {
     color: #ffffff;;
-    
+    font-family:Arial, Helvetica, sans-serif
 
 }
 
@@ -25,21 +26,10 @@ main{
   
 .image-container {
   display: flex;
-  margin-bottom: -200px;
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center ; /* Centraliza verticalmente (se houver altura) */
   height: 100vh; /* Ajuste conforme necessário */
 }
-
-#cards {
-  margin-top: 100px; /* Ajusta o espaço entre o carousel e os cards */
-}
-
-/* Optional: ajuste a margem interna do carousel, se necessário */
-.carousel-inner {
-  padding-bottom: 0px;
-}
-
 footer {
   text-align: center;
   padding: 10px;
@@ -60,9 +50,9 @@ body {
   
   
 } .breadcrumb {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:Arial, Helvetica, sans-serif ;
 
-  color: #fffefe; /* Altera a cor do texto */
+  color: #fffefe /* Altera a cor do texto */
 }
 
 .breadcrumb a {
@@ -79,7 +69,7 @@ body {
 #sobrenos{
   color: #a31919  ;
   background-color: rgb(241, 241, 241);
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
   border-radius: 1%;
 }
 
@@ -145,14 +135,140 @@ body {
   color: #ffffff; /* Altere para a cor desejada */
 }
 
-/* Efeito de movimentação ao passar o mouse sobre o card */
-#cartao {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Estilos Globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-/* Quando o mouse passar sobre o card */
-#cartao:hover {
-  transform: translateY(-10px); /* Movimento para cima */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Navbar */
+.custom-navbar {
+  background-color:  #0502179a;
+  padding: 10px;
+}
+
+.navbar-brand h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar-logo {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.breadcrumb {
+  background: transparent;
+}
+
+.breadcrumb-item a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  color: #fff;
+}
+
+/* Formulário de Montagem de PC */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background:  #0502179a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+.component {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #00ff0046;
+}
+
+/* Exibição dos Resultados */
+#resultado {
+  margin-top: 20px;
+  padding: 10px;
+  background-color:  #0502179a;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+#resultado h3 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color:  #0502179a;
+  color: #ffffff;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+#cartao{
+  background-color: #07031b;
+  color: #ddd;
+}
+#bota{
+  background-color: darkgreen;
+  padding:5px 10px; 
+  width: 150px;
+  font-size: 12px;
+  color: #ffffff;
+  border: #000000;
+}
+#bota1{
+  background-color: darkblue;
+  padding:5px 10px; 
+  width: 150px;
+  font-size: 12px;
+  color: #ffffff;
+  border: #000000;
 }
 
