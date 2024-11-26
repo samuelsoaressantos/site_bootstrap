@@ -21,4 +21,4 @@ Na **Ipaba's Tech**, você encontra uma vasta seleção de **peças de reposiç�
 
 Se você tem alguma dúvida ou deseja mais informações, entre em contato conosco através do nosso site ou pelas redes sociais.
 
-**Link do site**: [[](https://samuquinha444.github.io/site_bootstrap/index.html)](#)
+**Link do site**: [[link](https://samuquinha444.github.io/site_bootstrap/index.html)](#)
