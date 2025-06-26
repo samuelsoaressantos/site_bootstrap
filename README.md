@@ -62,6 +62,6 @@ O site está organizado de forma simples e eficiente, com as seguintes seções 
 
 ## Visite o Site
 
-Você pode ver o site em funcionamento acessando o seguinte link: https://samuquinha444.github.io/site_bootstrap/index.html
+Você pode ver o site em funcionamento acessando o seguinte link: (https://samuelsoaressantos.github.io/site_bootstrap/index.html)
 
 
